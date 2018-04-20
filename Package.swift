@@ -2,17 +2,20 @@
 import PackageDescription
 
 let package = Package(
-    name: "vapor3Study",
+    name: "vapor3Study",    
     dependencies: [
         // 💧 A server-side Swift web framework.
         .package(url: "https://github.com/vapor/vapor.git", from: "3.0.0-rc"),
-        .Package(url: "https://github.com/vapor/fluent.git", from: "3.0.0-rc"),
-        .Package(url: "https://github.com/vapor/fluent-sqlite.git", from: "3.0.0-rc"),
+        
+        // 🔵 Swift ORM (queries, models, relations, etc) built on SQLite 3.
+        .package(url: "https://github.com/vapor/fluent-sqlite.git", from: "3.0.0-rc")
     ],
     targets: [
-        .target(name: "App", dependencies: ["Vapor"]),
+        .target(name: "App", dependencies: ["FluentSQLite", "Vapor"]),
         .target(name: "Run", dependencies: ["App"]),
-        .testTarget(name: "AppTests", dependencies: ["App"]),
+        .testTarget(name: "AppTests", dependencies: ["App"])
     ]
 )
+
+
 

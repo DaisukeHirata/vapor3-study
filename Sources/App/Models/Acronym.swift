@@ -11,3 +11,7 @@ final class Acronym: Codable {
         self.long = long
     }
 }
+
+extension Acronym: SQLiteModel {}
+extension Acronym: Content {}
+extension Acronym: Migration {}
