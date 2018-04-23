@@ -14,7 +14,7 @@ public func routes(_ router: Router) throws {
     }
     
     router.get("hello", String.parameter) { req -> String in
-        let name = try req.parameter(String.self)
+        let name = try req.parameters.next(String.self)
         return "Hello, \(name)!"
     }
     
