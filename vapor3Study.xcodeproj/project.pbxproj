@@ -6402,6 +6402,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E39E3A8D20AA6477009D505B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		OBJ_101 /* Fluent 3.0.0-rc.2.3.3 */ = {
 			isa = PBXGroup;
 			children = (
@@ -7551,7 +7558,7 @@
 			path = ".build/checkouts/crypto.git-7980259129511365902/Sources/Random";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -7562,7 +7569,6 @@
 				OBJ_21 /* Dependencies */,
 				OBJ_819 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_500 /* Crypto */ = {
@@ -8444,6 +8450,7 @@
 		OBJ_8 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				E39E3A8D20AA6477009D505B /* Controllers */,
 				OBJ_9 /* Models */,
 				OBJ_11 /* boot.swift */,
 				OBJ_12 /* configure.swift */,
@@ -10072,7 +10079,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_819 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
